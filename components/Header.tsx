@@ -9,7 +9,7 @@ const Header = ({userId,accountId}:{userId:string,accountId:string}) => {
     <header className="header">
       <Search/>
       <div className="header-wrapper">
-        <FileUploader ownerId={userId} accountId={accountId}  />
+        <FileUploader ownerId={userId} accountId={accountId} className="" />
         <form action={async ()=>{
           "use server"
           await signOutUser()
