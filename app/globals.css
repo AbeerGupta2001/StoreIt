@@ -244,7 +244,7 @@
     @apply h5 relative z-20 text-center !important;
   }
   .dashboard-recent-files {
-    @apply h-full rounded-[20px] xl:h-[654px] custom-scrollbar overflow-auto bg-white p-5 xl:p-7 !important;
+    @apply h-full rounded-[20px] xl:h-[654px] custom-scrollbar overflow-auto bg-gray-200/20 p-5 xl:p-7 !important;
   }
   .recent-file-details {
     @apply flex w-full justify-between items-center !important;

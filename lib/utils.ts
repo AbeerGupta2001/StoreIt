@@ -23,7 +23,11 @@ export const convertFileSize = (sizeInBytes: number, digits?: number) => {
     return sizeInGB.toFixed(digits || 1) + " GB"; // 1 GB or more, show in GB
   }
 };
-
+export const calculateAngle = (sizeInBytes: number) => {
+  const totalSizeInBytes = 2 * 1024 * 1024 * 1024; // 2GB in bytes
+  const percentage = (sizeInBytes / totalSizeInBytes) * 360;
+  return Number(percentage.toFixed(2));
+};
 export const calculatePercentage = (sizeInBytes: number) => {
   const totalSizeInBytes = 2 * 1024 * 1024 * 1024; // 2GB in bytes
   const percentage = (sizeInBytes / totalSizeInBytes) * 100;
