@@ -30,7 +30,7 @@ const Search = () => {
       setOpen(true)
     }
     fetchFiles()
-  },[deBouncedQuery])
+  },[deBouncedQuery,path,router,searchParams])
 
   useEffect(()=>{
     if(!searchQuery){
